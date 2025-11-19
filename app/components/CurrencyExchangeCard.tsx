@@ -167,7 +167,7 @@ export default function CurrencyConverterInline() {
     const result: Record<string, string> = {};
     Object.keys(currencyList).forEach((code) => {
       const country = code.slice(0, 2).toLowerCase();
-      result[code] = `https://flagcdn.com/w80/${country}.png`;
+      result[code] = `https://flagcdn.com/${country}.svg`;
     });
     setFlags(result);
   }, []);
