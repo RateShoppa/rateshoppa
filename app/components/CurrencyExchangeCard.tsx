@@ -89,7 +89,7 @@ function FloatingInput({ label, value, ...props }: React.InputHTMLAttributes<HTM
       <label className="absolute left-5 -top-2 bg-white px-1 text-sm text-gray-500">{label}</label>
 
       {open && (
-        <div className="absolute top-full right-0 w-90 bg-white shadow-2xl rounded z-20 max-h-96 overflow-y-auto">
+        <div className="absolute top-full right-0 w-full bg-white shadow-2xl rounded z-40 max-h-96 overflow-y-auto">
           {/* Sticky header */}
           <div className="sticky top-0 bg-white z-10 px-5 pt-5 pb-2 mb-5 border-b border-gray-200">
             <input
@@ -266,7 +266,7 @@ export default function CurrencyConverterInline() {
             <span>Wise</span>
           </div>
 
-          <span className="text-end">1 USD - 200 EUR</span>
+          <span className="text-end">1 USD → 200 EUR</span>
         </div>
 
         <div className="grid grid-cols-2 items-center text-gray-700 mt-2">
@@ -281,7 +281,7 @@ export default function CurrencyConverterInline() {
             <span>MonieWorld</span>
           </div>
 
-          <span className="text-end">1 USD - 200 EUR</span>
+          <span className="text-end">1 USD → 200 EUR</span>
         </div>
 
         <div className="grid grid-cols-2 items-center text-gray-700 mt-2">
@@ -296,7 +296,7 @@ export default function CurrencyConverterInline() {
             <span>Nala</span>
           </div>
 
-          <span className="text-end">1 USD - 200 EUR</span>
+          <span className="text-end">1 USD → 200 EUR</span>
         </div>
       </div>
 

@@ -5,7 +5,7 @@ import CurrencyExchangeCard from "./CurrencyExchangeCard";
 
 export default function Hero() {
   return (
-    <section className="relative h-[85vh] flex items-center">
+    <section className="relative h-full lg:h-[85vh] lg:py-0 py-10 flex items-center">
       <div className="absolute inset-0">
         <Image
           src="/hero-bg.jpg"

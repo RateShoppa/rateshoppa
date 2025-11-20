@@ -1,7 +1,6 @@
 'use client';
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const countries = [
     { name: "Åland Islands", code: "ax" },
@@ -253,80 +252,76 @@ const countries = [
 ];
 
 export default function FlagMarquee() {
-  const [flags, setFlags] = useState<typeof countries>([]);
-
-  useEffect(() => {
-    setFlags(countries);
-  }, []);
-
+  const flags = countries;
   return (
-    <div className="relative w-full max-w-5xl mx-auto overflow-hidden py-10">
-      {/* LEFT FADE */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-1/4 bg-gradient-to-r from-white to-transparent z-10" />
+    <section className="bg-[#f7f9f7] py-20">
+        <div className="relative w-full max-w-5xl mx-auto overflow-hidden">
+            {/* LEFT FADE */}
+            <div className="pointer-events-none absolute left-0 top-0 h-full w-1/4 bg-gradient-to-r from-[#f7f9f7] to-transparent z-10" />
 
-      {/* RIGHT FADE */}
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-1/4 bg-gradient-to-l from-white to-transparent z-10" />
+            {/* RIGHT FADE */}
+            <div className="pointer-events-none absolute right-0 top-0 h-full w-1/4 bg-gradient-to-l from-[#f7f9f7] to-transparent z-10" />
 
-      {/* MARQUEE */}
-      <div className="marquee">
-        <div className="marquee-inner">
-          {/* First run */}
-          {flags.map((country, idx) => (
-            <div
-              key={idx}
-              className="flex items-center justify-center w-40 h-40 mx-2"
-            >
-              <div className="w-26 h-26 rounded-full overflow-hidden border border-gray-300">
-                <Image
-                  src={`https://flagcdn.com/${country.code}.svg`}
-                  alt={country.name}
-                  width={64}
-                  height={64}
-                  className="object-cover w-full h-full"
-                  unoptimized
-                />
-              </div>
+            {/* MARQUEE */}
+            <div className="marquee">
+                <div className="marquee-inner">
+                {/* First run */}
+                {flags.map((country, idx) => (
+                    <div
+                    key={idx}
+                    className="flex items-center justify-center w-40 h-40 mx-2"
+                    >
+                    <div className="w-26 h-26 rounded-full overflow-hidden border border-gray-300">
+                        <Image
+                        src={`https://flagcdn.com/${country.code}.svg`}
+                        alt={country.name}
+                        width={64}
+                        height={64}
+                        className="object-cover w-full h-full"
+                        unoptimized
+                        />
+                    </div>
+                    </div>
+                ))}
+
+                {/* Duplicate for seamless scroll */}
+                {flags.map((country, idx) => (
+                    <div
+                    key={"dup-" + idx}
+                    className="flex items-center justify-center w-40 h-40 mx-2"
+                    >
+                    <div className="w-26 h-26 rounded-full overflow-hidden border border-gray-300">
+                        <Image
+                        src={`https://flagcdn.com/${country.code}.svg`}
+                        alt={country.name}
+                        width={64}
+                        height={64}
+                        className="object-cover w-full h-full"
+                        unoptimized
+                        />
+                    </div>
+                    </div>
+                ))}
+                </div>
             </div>
-          ))}
 
-          {/* Duplicate for seamless scroll */}
-          {flags.map((country, idx) => (
-            <div
-              key={"dup-" + idx}
-              className="flex items-center justify-center w-40 h-40 mx-2"
-            >
-              <div className="w-26 h-26 rounded-full overflow-hidden border border-gray-300">
-                <Image
-                  src={`https://flagcdn.com/${country.code}.svg`}
-                  alt={country.name}
-                  width={64}
-                  height={64}
-                  className="object-cover w-full h-full"
-                  unoptimized
-                />
-              </div>
+            <style jsx>{`
+                .marquee {
+                overflow: hidden;
+                white-space: nowrap;
+                }
+
+                .marquee-inner {
+                display: inline-flex;
+                animation: scroll 250s linear infinite;
+                }
+
+                @keyframes scroll {
+                0%   { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+                }
+            `}</style>
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* STYLES */}
-      <style jsx>{`
-        .marquee {
-          overflow: hidden;
-          white-space: nowrap;
-        }
-
-        .marquee-inner {
-          display: inline-flex;
-          animation: scroll 150s linear infinite;
-        }
-
-        @keyframes scroll {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-      `}</style>
-    </div>
+    </section>
   );
 }
