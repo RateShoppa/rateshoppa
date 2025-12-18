@@ -377,7 +377,7 @@ export default function CurrencyConverterInlineAPI({
       )}
 
 
-      <div className="w-full rounded-xl border border-gray-300 p-4 bg-white">
+      {/* <div className="w-full rounded-xl border border-gray-300 p-4 bg-white">
         <h6 className='mb-3 uppercase text-xs'>Top 3 cheapest rates</h6>
         <hr className='border-gray-300' />
         
@@ -431,7 +431,7 @@ export default function CurrencyConverterInlineAPI({
             ))}
           </>
         )}
-      </div>
+      </div> */}
 
       {/* Compare Rates */}
       <button

@@ -251,7 +251,7 @@ export default function CurrencyConverterInline() {
 </div>
 
 
-      <div className="w-full rounded-xl border border-gray-300 p-4 bg-white">
+      {/* <div className="w-full rounded-xl border border-gray-300 p-4 bg-white">
         <h6 className='mb-3 uppercase text-xs'>Top 3 cheapest rates</h6>
         <hr className='border-gray-300' />
         <div className="grid grid-cols-2 items-center text-gray-700 mt-2">
@@ -298,7 +298,7 @@ export default function CurrencyConverterInline() {
 
           <span className="text-end">1 USD → 200 EUR</span>
         </div>
-      </div>
+      </div> */}
 
       {/* Compare Rates */}
       <button className="px-5 py-4 w-full bg-[#B6EA25] text-black rounded hover:opacity-90 transition">
