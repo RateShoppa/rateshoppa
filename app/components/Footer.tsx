@@ -80,12 +80,12 @@ export default function Footer() {
             <h2 className="font-bold mb-4 text-gray-300">Company</h2>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-white hover:text-[#B6EA25] transition" aria-label="About us">
+                <Link href="/about" className="text-white hover:text-[#B6EA25] transition" aria-label="About us">
                   About us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-white hover:text-[#B6EA25] transition" aria-label="Contact us">
+                <Link href="/contact" className="text-white hover:text-[#B6EA25] transition" aria-label="Contact us">
                   Contact us
                 </Link>
               </li>

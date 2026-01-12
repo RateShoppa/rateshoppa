@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Cta from "../components/Cta";
@@ -56,19 +55,19 @@ export default function TermsAndConditions() {
                 <div className="grid grid-cols-1 border border-gray-100 md:grid-cols-3">
                     <div className="border-b border-gray-100 p-8 md:border-b-0 md:border-r last:border-r-0">
                         <p className="leading-relaxed">
-                            <strong>Never Miss a Sweet Drop (coming soon!):</strong> Sign up for our free Rate Alerts! Tell us the currency pair and your preferred rate, and we'll instantly notify you when rates drop across your selected sites or reach the value you're looking for.
+                            <strong>Never Miss a Sweet Drop (coming soon!):</strong> Sign up for our free Rate Alerts! Tell us the currency pair and your preferred rate, and we&apos;ll instantly notify you when rates drop across your selected sites or reach the value you&apos;re looking for.
                         </p>
                     </div>
 
                     <div className="border-b border-gray-100 p-8 md:border-b-0 md:border-r last:border-r-0">
                         <p className="leading-relaxed">
-                         <strong>Instant Access:</strong> Once you spot the best rate for your transaction, one click takes you directly to the provider's specific page to complete the exchange. It's fast, easy, and secure.
+                         <strong>Instant Access:</strong> Once you spot the best rate for your transaction, one click takes you directly to the provider&apos;s specific page to complete the exchange. It&apos;s fast, easy, and secure.
                         </p>
                     </div>
 
                     <div className="border-b border-gray-100 p-8 md:border-b-0 md:border-r last:border-r-0">
                         <p className="leading-relaxed">
-                            <strong>100% Free for You:</strong> We don't charge you a thing to use this tool. Our mission is just to help you keep more of your hard-earned money.<br />
+                            <strong>100% Free for You:</strong> We don&apos;t charge you a thing to use this tool. Our mission is just to help you keep more of your hard-earned money.<br />
                             Think of us as your smart, friendly guide that always makes sure you get the biggest bang for your buck on every exchange.
                         </p>
                     </div>
