@@ -106,7 +106,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-white hover:text-[#B6EA25] transition" aria-label="FAQs">
+                <Link href="/faq" className="text-white hover:text-[#B6EA25] transition" aria-label="FAQs">
                   FAQs
                 </Link>
               </li>
