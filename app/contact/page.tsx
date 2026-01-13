@@ -1,8 +1,6 @@
 "use client";
 
-import Cta from "../components/Cta";
-
-export default function TermsAndConditions() {
+export default function Contact() {
   return (
         <>
             <section className="max-w-7xl mx-auto px-6 py-24">

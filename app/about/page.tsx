@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Cta from "../components/Cta";
 
-export default function TermsAndConditions() {
+export default function About() {
   return (
         <>
             <section className="flex min-h-[85vh] items-center justify-center px-6 text-center">
@@ -88,7 +89,7 @@ export default function TermsAndConditions() {
 
                     <div className="text-center md:text-left">
                         <h2 className="mb-8 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-                            Who is this service for?
+                            Who is this <br />service for?
                         </h2>
 
                         <div className="space-y-6 text-gray-600 leading-relaxed">
