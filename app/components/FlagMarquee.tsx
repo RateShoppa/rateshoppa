@@ -271,7 +271,7 @@ export default function FlagMarquee() {
                     key={idx}
                     className="flex items-center justify-center w-40 h-40 mx-2"
                     >
-                    <div className="w-26 h-26 rounded-full overflow-hidden border border-gray-300">
+                    <div className="w-16 h-16 rounded-full overflow-hidden border border-gray-300">
                         <Image
                         src={`https://flagcdn.com/${country.code}.svg`}
                         alt={country.name}

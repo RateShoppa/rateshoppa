@@ -101,7 +101,7 @@ export default function Footer() {
             <h2 className="font-bold mb-4 text-gray-300">Resources</h2>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-white hover:text-[#B6EA25] transition" aria-label="Support">
+                <Link href="/support" className="text-white hover:text-[#B6EA25] transition" aria-label="Support">
                   Support
                 </Link>
               </li>
